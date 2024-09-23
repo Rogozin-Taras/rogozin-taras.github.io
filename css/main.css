@@ -1,0 +1,22 @@
+/* root selector*/
+html {
+    /*Встановлення змінної*/
+   --accentColor: red;
+}
+
+h1{
+    /*Використання встановленої змінної*/
+color: var(--accentColor);    
+}
+
+.app-nav-header{
+    color: blue; 
+    background-color: rgb(0, 255, 21); 
+    border: 1px solid black;
+}
+
+.app-nav-header--title
+{
+    color: rgb(206, 16, 25);
+    background-color: azure;
+}

@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя домашня сторінка</title>
+    <style>
+        h1{
+            color: blue; 
+            background-color: rgb(0, 255, 21); 
+            border: 1px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
     <!-- wrapper app-->
 
-   <div>
+   <div class="app">
 
     <!-- aside bar -->
 
-     <aside>
+     <aside class="app-nav">
 
         <!-- header -->
 
-        <header>
-            <span>Menu</span>
+        <header class="app-nav-header">
+            <span class="app-nav-header--title">Menu</span>
             <span>
                 <button>&lt;--</button>
             </span>
@@ -26,28 +34,33 @@
 
         <!-- navigation ul ol dl-->
 
-        <ul>
-            <li><a href="index.html">Home<span></span></a></li>
-            <li><a href="catalog.html">Catalog<span></span></a></li>
-            <li><a href="blog.html">Blog<span></span></a></li>
-            <li><a href="about.html">About<span></span></a></li>
-            <li><a href="contact.html">Contact<span></span></a></li>
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li><a href="catalog.html"><span>Catalog</span></a></li>
+            <li><a href="blog.html"><span>Blog</span></a></li>
+            <li><a href="about.html"><span>About</span></a></li>
+            <li><a href="contact.html"><span>Contact</span></a></li>
         </ul>
      </aside>
 
      <!-- wrapper mail -->
 
-      <div>
-        <header>
+      <div class="app-main">
+        <header class="app-main-header">
 
             <!-- hamburger -->
 
              <span>
-                <button>
-
-             </button>
+                <button class="icon-button">
+                    X
+                </button>
             </span>
-            <h1>
+            <h1 class="app-main-header-title">
+                <em class="app-main-header-title--emphasis">Shopaholic</em>
                 <span>Super store</span>
             </h1>
         
