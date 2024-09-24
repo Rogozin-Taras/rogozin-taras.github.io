@@ -1,12 +1,97 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello everone</title>
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Lesson 3 challenges</title>
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+    <style type="text/css">
+    	
+    	body {
+			background: var(--bgColor);
+            
+		}
+
+		div {
+			--bgColor: limegreen;
+		}
+
+		/*
+		 визначте для елементів p властивість фону таким чином:
+			background: var(--bgColor);
+		*/
+    </style>
 </head>
-<body>
- Hello world
+<body style="background: var(--bgColor);">
+
+Вправа 2    
+
+
+<p style="color: blue;">This is my paragraph.</p>
+
+<!-- Текст "This is my paragraph" буде мати голубий колір, так як прописаний стиль в рамках тега є пріорітетнішим. -->
+
+<hr>
+Вправа 3: У наступному фпагменті випрвити помилки <br>
+Відповідь: В рамках одного html документа не може бути 2 однакових id, тому тут можна використати class
+
+<p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+
+<p class="exciting">The most exciting paragraph on the page. One of a kind!</p>
+
+<div class="exciting">The most exciting paragraph on the page. One of a kind!</div>
+
+<style>
+    .exciting {
+        background: #f69d3c;
+        border: 1px solid #696969;
+        padding: 10px;
+    }
+</style>
+
+<hr>
+Вправа 4: Чи буде змінна --bgColor видимою для елемента body. Яким буде фон елемента body і чому <br>
+Відповідь: Змінна --bgColor не буде видимою для елемента body, так як вона була визначена в рамках елементу div.
+<!-- Додайте тут 2 елеиенти div: -->
+<div>
+    <h3>Div 1</h3>
+    <p style="background: var(--bgColor);">Paragraph 1</p>
+</div>
+
+<div>
+    <h3>Div 2</h3>
+    <p style="background: var(--bgColor);">Paragraph 2</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
