@@ -1,0 +1,19 @@
+html {
+    --accentColorMuted: hsl(300, 40%, 40%);
+}
+
+a {
+    color: var(--accentColorMuted);
+}
+
+/* Вправа 6
+
+@import url("my-imported-styles.css");
+	
+* {
+		margin: 0;
+		padding: 0;
+	}
+
+    Правило @import має бути визначеним у верхній частині стилів.
+*/
