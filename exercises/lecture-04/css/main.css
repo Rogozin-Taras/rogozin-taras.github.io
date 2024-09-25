@@ -1,6 +1,7 @@
-h1, h2, h3 {
-    color: gray;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/* я не знайшов шрифт font-awesome на ресурсі https://fonts.google.com/ тому для прикладу підключив шрифт Roboto Mono */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 
 #main {
     color: #e60202;
@@ -18,15 +19,6 @@ html {
     font-size: 100%;
 }
 
-body {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-size: 140%; 
-}
-
-h1 {
-    font-size: 240%;
-}
-
 div {
     font-size: 1.6em;
     & span {
@@ -40,6 +32,34 @@ strong {
     font-size: 1.6em;
 }
 
+body {
+    font-family: Roboto;
+    font-size: 1rem
+}
 
+h1 {
+    color: gray;
+    font-weight: 700;
+    font-size: 1.45rem
+}
+
+h2 {
+    color: gray;
+    font-weight: 700;
+    font-size: 1.3rem
+}
+
+h3 {
+    color: gray;
+    font-weight: 700
+}
+
+.list-unstyled {
+    list-style: none
+}
+
+.footer-social {
+
+}
 
 
