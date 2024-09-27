@@ -1,0 +1,18 @@
+.body {
+    background: linear-gradient(to right, #aac8aa 5%, #59aa5d 17%, #1eb11e 40%, #096509 85%, #025d02 95%);
+}
+
+.negative {
+    background: linear-gradient(to left, rgb(142, 142, 181) -50%, #5d60a4 -10%, rgb(63, 63, 171) 0%, rgb(44, 44, 140) 100%, blue 150%);
+}
+
+.percents{
+    background: linear-gradient(to bottom, rgb(206, 235, 206) 2em, rgb(167, 233, 167) 4em, rgb(105, 222, 105) 8em, rgb(77, 223, 77) 16em,  rgb(27, 186, 27) 64em, green 128em);
+}
+
+.radial{
+    background: 
+    radial-gradient(ellipse at top, orange, transparent),
+    radial-gradient(ellipse at bottom, red, transparent);
+}
+
