@@ -1,0 +1,38 @@
+.box {
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 40px;
+    margin: 40px;
+    width: 300px;
+    height: 150px;
+  }
+  
+  .box span {
+      background-color: pink;
+      border: 5px solid black;
+      padding: 1em;
+  }
+  .box1 {
+    box-sizing: content-box;
+  }
+
+  .box2 {
+    box-sizing: border-box;
+    border: 5px dashed black;
+    margin-top: 20px;
+    margin-right: 1em;
+    margin-bottom: 40px;
+    margin-left: 2em;
+    padding: 1em;
+  }
+
+  span {
+    float: left;
+  }
+
+  .div_page {
+    border: 3px solid black;
+    margin: 5px;
+    position: relative;
+  }
+  
