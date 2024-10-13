@@ -1,0 +1,72 @@
+
+* {
+    margin: 0;
+  }
+
+  body {
+    color: #000;
+    background: #fff;
+    font-family: Arial, sans-serif;
+    padding: 1em;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        'header header header'
+        'sidebar main main'
+        'footer footer footer';
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+         font-size: calc(16px + (24 - 16) * ((100vw - 768px) / (1920 - 768)));
+    }
+}
+
+@media (min-width: 1920px) {
+    body {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: min(16px, 100%);
+    }
+}
+
+@media (min-width: 1920px) {
+    body {
+        font-size: max(48px, 100%);
+    }
+}
+
+@media (min-width: 786px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Дві колонки */
+    }
+}
