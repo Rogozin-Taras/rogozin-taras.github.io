@@ -14,7 +14,7 @@
     font-size: 18px;
 }
 
-.container_item div{
+.container_item div {
     width: 100%;
 }
 
@@ -30,7 +30,7 @@ img {
     text-decoration: none;
     color: black;
     width: 100%;
-  
+
 }
 
 .container_item img {
@@ -73,54 +73,54 @@ img {
     margin: 15px;
 }
 
-.image_size{
+.image_size {
     height: 264px;
     width: 100%;
     min-width: 354px;
     align-self: flex-start;
 }
 
-.back_1{
+.back_1 {
     background-image: url('../image/frame-13213146421.png');
     background-size: cover;
 }
 
-.back_2{
+.back_2 {
     background-image: url('../image/frame_2.png');
     background-size: cover;
 }
 
-.back_3{
+.back_3 {
     background-image: url('../neshchasni-vipadki.jpg');
     background-size: cover;
 }
 
-.back_2_1{
+.back_2_1 {
     background-image: url('../image/frame-2-1.png');
     background-size: cover;
 }
 
-.back_2_2{
+.back_2_2 {
     background-image: url('../image/frame-2-2.png');
     background-size: cover;
 }
 
-.back_2_3{
+.back_2_3 {
     background-image: url('../image/frame-3-2.jpg');
     background-size: cover;
 }
 
-.back_3_1{
+.back_3_1 {
     background-image: url('../image/frame-3-1.png');
     background-size: cover;
 }
 
-.back_3_2{
+.back_3_2 {
     background-image: url('../image/frame-3-2.png');
     background-size: cover;
 }
 
-.back_3_3{
+.back_3_3 {
     background-image: url('../image/frame-3-3.png');
     background-size: cover;
 }
@@ -142,6 +142,12 @@ img {
 
 .container_item:hover{
     filter: grayscale(0);
+    cursor: pointer;
+}
+
+.container_item:hover .btn_details {
+    opacity: 1; /* Кнопка стає видимою */
+    visibility: visible; /* Відображає кнопку */
 }
 
 @media (max-width: 1400px) {
@@ -160,16 +166,19 @@ img {
     font-weight: 600;
     cursor: pointer;
     width: 100%;
+    opacity: 0; /* Кнопка невидима */                                        
+    visibility: hidden; /* Кнопка не відображається */                               
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Анімація появи */       
 }
 
 .last-item {
     align-self: flex-end;
-  }
+}
 
-  .div_content{
-      height: 200px;
-      padding: 24px 16px;
-  }
+.div_content {
+    height: 200px;
+    padding: 24px 16px;
+}
 
 .footer_bottom {
     display: flex;
@@ -272,7 +281,7 @@ img {
 }
 
 .info-block {
-     display: flex;
+    display: flex;
 }
 
 .info-block p {
@@ -280,7 +289,7 @@ img {
     color: #828282;
 }
 
-.container_items p{
+.container_items p {
     font-size: 18px;
     margin-top: 24px;
     line-height: 1.5em;
@@ -362,7 +371,7 @@ body {
     color: #FEE600;
 }
 
-.info-block-reverse{
+.info-block-reverse {
     flex-direction: row-reverse;
     align-items: stretch;
 }
@@ -374,7 +383,7 @@ body {
     border-radius: 25%;
 }
 
-.info-block-1{
+.info-block-1 {
     display: flex;
     justify-content: flex-start
 }
@@ -386,7 +395,29 @@ body {
     line-height: 1.5;
 }
 
-.test{
+.test {
     margin-top: 90px;
     margin-left: 100px;
+}
+
+.header_bottom_nav {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.header_bottom_nav_button {
+    margin-right: 10px;
+    margin-top: 0;
+}
+
+.header_bottom_nav_search {
+    background-image: url(/image/search_black.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    background-size: 25px 25px;
 }
