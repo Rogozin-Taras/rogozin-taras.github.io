@@ -140,35 +140,19 @@ img {
     filter: grayscale(1);
 }
 
-.container_item:hover{
+.container_item:hover {
     filter: grayscale(0);
     cursor: pointer;
+    background-color: white;
+    box-shadow: 0px 0px 15px gainsboro;
 }
 
-.container_item:hover .btn_details {
-    opacity: 1; /* Кнопка стає видимою */
-    visibility: visible; /* Відображає кнопку */
-}
+
 
 @media (max-width: 1400px) {
     .container_item {
         filter: grayscale(0);
     }
-}
-
-.btn_details {
-    display: flex;
-    height: 50px;
-    background-color: #FEE600;
-    align-items: center;
-    padding-left: 30px;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0; /* Кнопка невидима */                                        
-    visibility: hidden; /* Кнопка не відображається */                               
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Анімація появи */       
 }
 
 .last-item {
@@ -421,3 +405,28 @@ body {
     margin-left: 10px;
     background-size: 25px 25px;
 }
+
+.btn_details {
+    display: flex;
+    height: 50px;
+    background-color: #FEE600;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .15s ease-in-out;
+    filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0));
+    transition-property: filter, height, background-position;
+}
+
+.container_item:hover .btn_details {
+    opacity: 1;
+    transform: translateY(100%);
+    transition: right .15s ease-in-out;
+}
+
+
