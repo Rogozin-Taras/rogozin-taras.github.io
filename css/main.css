@@ -203,16 +203,6 @@ img {
     font-weight: bold;
 }
 
-.header_top_menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    list-style: none;
-    text-align: start;
-    width: auto;
-}
-
 .header_section_menu {
     display: flex;
     /* flex-wrap: wrap; */
@@ -571,4 +561,22 @@ margin-right: 270px;
 .footer-button-link{
    margin-top: 10px;
    display: flex;
+}
+
+.menu_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    text-align: start;
+    width: auto;
+}
+
+  .menu-category {
+    display: none;
+}
+
+.menu-category.active {
+    display: flex;
 }
